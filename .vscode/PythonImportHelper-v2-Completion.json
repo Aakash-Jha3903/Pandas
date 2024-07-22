@@ -1,0 +1,290 @@
+[
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Column_Deletion",
+        "description": "Column_Deletion",
+        "peekOfCode": "data = {\n    'name': ['aj', 'shivam', 'mohit', 'mohit'],\n    'age': [28, 24, 35, 32],\n    'roll': [102, 102, 103, 104],\n    'marks':[11, 22, 33, 44],\n    'city':['Madhubani', 'Madhubani', 'Mithila', 'Noida'],\n    'gender':['F', 'M', 'M', 'F']\n}\ndf = pd.DataFrame(data)\n# print(\"Display All Data:\\n\", df)",
+        "detail": "Column_Deletion",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Column_Deletion",
+        "description": "Column_Deletion",
+        "peekOfCode": "df = pd.DataFrame(data)\n# print(\"Display All Data:\\n\", df)\n\"\"\"Delete single Column\"\"\"\n#del df['gender']\n#print(\"\\nGender Column Deleted:\\n\", df)\n\"\"\"Pop single column \"\"\"\n# print(\"\\nPOP City:\\n\", df.pop('city'))\n# print(\"\\nData after POP City:\\n\", df)\n##print(\"\\nTypeError: DataFrame.pop() missing 1 required positional argument: 'item' \\n\", df.pop())\n\"\"\"Delete Multiple column drop() which returns the data after deletion",
+        "detail": "Column_Deletion",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Column_Insertion",
+        "description": "Column_Insertion",
+        "peekOfCode": "data = {\n    'name':['Aakash','Shivam','Ajay','Ajay','Rohan','Mohan',np.nan ],\n    'age':[ 24,20,22,np.nan,21,np.nan,20 ],\n    'City': ['Noida', 'Delhi', 'Mumbai', 'Pune','Goa','Patna','Lucknow']\n    }\ndf = pd.DataFrame(data)\n# print(\"Display all Data : \\n\",df)\n# df[\"Result\"] = \"pass\"\n# print(\"After Insertion of Column at the End : \\n\",df)\n# df[\"marks\"] = [95,98,69,96,56,85,33]",
+        "detail": "Column_Insertion",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Column_Insertion",
+        "description": "Column_Insertion",
+        "peekOfCode": "df = pd.DataFrame(data)\n# print(\"Display all Data : \\n\",df)\n# df[\"Result\"] = \"pass\"\n# print(\"After Insertion of Column at the End : \\n\",df)\n# df[\"marks\"] = [95,98,69,96,56,85,33]\n# print(\"After Insertion of Array Marks-Column : \\n\",df)\n# \"\"\"insert() - It is used to insert column at particular location \"\"\"\n# hobbies = [\"Football\", \"Cricket\", \"reading\", \"singing\", \"chatting\", \"computer\", \"fighting\",]\n# df.insert(2, \"hobbies\", hobbies)\n# print(\"Insert Column at index 2 :\\n\", df)",
+        "detail": "Column_Insertion",
+        "documentation": {}
+    },
+    {
+        "label": "df[\"fees\"]",
+        "kind": 5,
+        "importPath": "Column_Insertion",
+        "description": "Column_Insertion",
+        "peekOfCode": "df[\"fees\"] = df[\"age\"] * 12\nprint(\"\\n Fees Column Added:\\n\", df)",
+        "detail": "Column_Insertion",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Column_Selection",
+        "description": "Column_Selection",
+        "peekOfCode": "data = {\n    'name':['Aakash','Shivam','Ajay','Ajay','Rohan','Mohan',np.nan ],\n    'age':[ 24,20,22,np.nan,21,np.nan,20 ],\n    'City': ['Noida', 'Delhi', 'Mumbai', 'Pune','Goa','Patna','Lucknow']\n    }\ndf = pd.DataFrame(data)\n# print(\"Display all Data : \\n\",df)\n# print(\"\\nSingle Column Data : \\n\",df[\"age\"])\n# print(\"\\n Sum of Single Column Data : \\n\",df[\"age\"].sum())\n# print(\"\\n Empty DataFrame : \\n\",df[[]])",
+        "detail": "Column_Selection",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Column_Selection",
+        "description": "Column_Selection",
+        "peekOfCode": "df = pd.DataFrame(data)\n# print(\"Display all Data : \\n\",df)\n# print(\"\\nSingle Column Data : \\n\",df[\"age\"])\n# print(\"\\n Sum of Single Column Data : \\n\",df[\"age\"].sum())\n# print(\"\\n Empty DataFrame : \\n\",df[[]])\n# print(\"\\nMultiple Column Data : \\n\",df[[\"age\" , \"name\",\"City\"]])\n## print(\"\\n Empty DataFrame : \\n\",df[])\n# print(\"\\nSelect Row by integer Location : \\n\",df.iloc[2])\n# print(\"\\nSelect Row by Label : \\n\",df.loc[2])\nprint(\"\\nSlice Row : \\n\",df[2:5])",
+        "detail": "Column_Selection",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Column_Updation",
+        "description": "Column_Updation",
+        "peekOfCode": "data = {\n    'name': ['aj', 'shivam', 'Rohit', 'mohit'],\n    'age': [28, 24, 35, 32],\n    'roll': [102, 102, 103, 104],\n    'marks':[11, 22, 33, 44],\n    'city':['Madhubani', 'Madhubani', 'Mithila', 'Noida'],\n    'gender':['F', 'M', 'M', 'F']\n}\ndf = pd.DataFrame(data)\nprint(\"Display All Data:\\n\", df)",
+        "detail": "Column_Updation",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Column_Updation",
+        "description": "Column_Updation",
+        "peekOfCode": "df = pd.DataFrame(data)\nprint(\"Display All Data:\\n\", df)\n# # Update all fields of a column\n# df[\"gender\"] = \"F\"\n# print(\"\\nUpdate Gender Column:\\n\", df)\n# # Update specific field of a column\n# df.loc[df['roll'] == 102, 'marks'] = 999\n# print(\"\\nUpdate 'All' roll no.102  marks :\\n\", df)\n# Replace Values\nprint(\"\\n Replace 'All' Values:\\n\", df.replace('Madhubani', 'Delhi'))",
+        "detail": "Column_Updation",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Data_Inspection",
+        "description": "Data_Inspection",
+        "peekOfCode": "data = {\n    'name':['Aakash','Shivam','Ajay','Ajay','Rohan','Mohan',np.nan ],\n    'age':[ 24,20,22,np.nan,21,np.nan,20 ]\n}\ndf = pd.DataFrame(data)\n# print(df)\n# print(\"Info :\\n\", df.info)\n# print(\"null Info :\\n\", df.isnull())\n# print(\"total null Info :\\n\", df.isnull().sum())\n# print(\"Statistical summary : \",df.describe())",
+        "detail": "Data_Inspection",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Data_Inspection",
+        "description": "Data_Inspection",
+        "peekOfCode": "df = pd.DataFrame(data)\n# print(df)\n# print(\"Info :\\n\", df.info)\n# print(\"null Info :\\n\", df.isnull())\n# print(\"total null Info :\\n\", df.isnull().sum())\n# print(\"Statistical summary : \",df.describe())\n# print(\"Top 5 data : \",df.head())\n# print(\"Top 10 data : \",df.head(10))\n# print(\"Bottom 5 data : \",df.tail())\n# print(\"Bottom 10 data : \",df.tail(10))",
+        "detail": "Data_Inspection",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Filter",
+        "description": "Filter",
+        "peekOfCode": "data = {\n    'name': ['aj', 'shivam', 'mohit', 'mohit'],\n    'age': [28, 24, 35, 32],\n    'roll': [102, 102, 103, 104],\n    'marks':[11, 22, 33, 44],\n    'city':['Madhubani', 'Madhubani', 'Mithila', 'Noida'],\n    'gender':['F', 'M', 'M', 'F']\n}\ndf = pd.DataFrame(data)\n# print(\"Display All Data:\\n\", df)",
+        "detail": "Filter",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Filter",
+        "description": "Filter",
+        "peekOfCode": "df = pd.DataFrame(data)\n# print(\"Display All Data:\\n\", df)\n\"\"\"  isin([....])  \"\"\"\ndt1 = df['age'].isin([28, 32])\nprint(dt1)\ndt2 = df[df['age'].isin([28, 32])]\nprint(dt2)",
+        "detail": "Filter",
+        "documentation": {}
+    },
+    {
+        "label": "dt1",
+        "kind": 5,
+        "importPath": "Filter",
+        "description": "Filter",
+        "peekOfCode": "dt1 = df['age'].isin([28, 32])\nprint(dt1)\ndt2 = df[df['age'].isin([28, 32])]\nprint(dt2)",
+        "detail": "Filter",
+        "documentation": {}
+    },
+    {
+        "label": "dt2",
+        "kind": 5,
+        "importPath": "Filter",
+        "description": "Filter",
+        "peekOfCode": "dt2 = df[df['age'].isin([28, 32])]\nprint(dt2)",
+        "detail": "Filter",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "intro",
+        "description": "intro",
+        "peekOfCode": "a = pd.Series([10, 20, 30, 40, 50])\nb = pd.Series([10, 20, 30, 40, 50],index=[\"a\",\"a\",\"c\",\"d\",\"e\"])\nc = pd.Series({\"a\":1,\"b\":2,\"c\":3 })\nd = pd.Series(5.0,index=[\"a\",\"a\",\"c\",\"d\",\"e\"])\nprint(d)\nprint(d.dtype)  # float64\nprint(d.index)  # Index(['a', 'b', 'c', 'd', 'e'], dtype='object')\nprint(d.values) # [5. 5. 5. 5. 5.]\nprint(d.keys)   # same as \"d\"\nprint(\"GET valueS : \",b.get(\"a\"))",
+        "detail": "intro",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "intro",
+        "description": "intro",
+        "peekOfCode": "b = pd.Series([10, 20, 30, 40, 50],index=[\"a\",\"a\",\"c\",\"d\",\"e\"])\nc = pd.Series({\"a\":1,\"b\":2,\"c\":3 })\nd = pd.Series(5.0,index=[\"a\",\"a\",\"c\",\"d\",\"e\"])\nprint(d)\nprint(d.dtype)  # float64\nprint(d.index)  # Index(['a', 'b', 'c', 'd', 'e'], dtype='object')\nprint(d.values) # [5. 5. 5. 5. 5.]\nprint(d.keys)   # same as \"d\"\nprint(\"GET valueS : \",b.get(\"a\"))",
+        "detail": "intro",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "intro",
+        "description": "intro",
+        "peekOfCode": "c = pd.Series({\"a\":1,\"b\":2,\"c\":3 })\nd = pd.Series(5.0,index=[\"a\",\"a\",\"c\",\"d\",\"e\"])\nprint(d)\nprint(d.dtype)  # float64\nprint(d.index)  # Index(['a', 'b', 'c', 'd', 'e'], dtype='object')\nprint(d.values) # [5. 5. 5. 5. 5.]\nprint(d.keys)   # same as \"d\"\nprint(\"GET valueS : \",b.get(\"a\"))",
+        "detail": "intro",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "intro",
+        "description": "intro",
+        "peekOfCode": "d = pd.Series(5.0,index=[\"a\",\"a\",\"c\",\"d\",\"e\"])\nprint(d)\nprint(d.dtype)  # float64\nprint(d.index)  # Index(['a', 'b', 'c', 'd', 'e'], dtype='object')\nprint(d.values) # [5. 5. 5. 5. 5.]\nprint(d.keys)   # same as \"d\"\nprint(\"GET valueS : \",b.get(\"a\"))",
+        "detail": "intro",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "intro_dataframe",
+        "description": "intro_dataframe",
+        "peekOfCode": "data = {'Name': ['Aakash', 'Shivam', 'Rudra', 'Sona'],\n        'Age': [24, 23, 22, 23],\n        'City': ['Noida', 'Delhi', 'Mumbai', 'Pune']}\n# Create a DataFrame\ndf = pd.DataFrame(data)\ndf = pd.DataFrame(data, index=[i for i in range(1, 5)])\n# print(df)\n# print(\"Index of df are :\\n\",df.index)\n# print(\"names of df are :\\n\",df.Name)\n# print(\"city of df are :\\n\",df.City.get(1))  \"\"\"get() take the index value \"\"\"",
+        "detail": "intro_dataframe",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "intro_dataframe",
+        "description": "intro_dataframe",
+        "peekOfCode": "df = pd.DataFrame(data)\ndf = pd.DataFrame(data, index=[i for i in range(1, 5)])\n# print(df)\n# print(\"Index of df are :\\n\",df.index)\n# print(\"names of df are :\\n\",df.Name)\n# print(\"city of df are :\\n\",df.City.get(1))  \"\"\"get() take the index value \"\"\"\nprint(\"\\nage of df are :\\n\", df.Age)\nprint(\"\\nage[ using get('Age') ] of df are :\\n\", df.get(\"Age\"))\nprint(\"\\nage[ using get(index-key) ] of df are :\\n\", df.Age.get(1))",
+        "detail": "intro_dataframe",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "intro_dataframe",
+        "description": "intro_dataframe",
+        "peekOfCode": "df = pd.DataFrame(data, index=[i for i in range(1, 5)])\n# print(df)\n# print(\"Index of df are :\\n\",df.index)\n# print(\"names of df are :\\n\",df.Name)\n# print(\"city of df are :\\n\",df.City.get(1))  \"\"\"get() take the index value \"\"\"\nprint(\"\\nage of df are :\\n\", df.Age)\nprint(\"\\nage[ using get('Age') ] of df are :\\n\", df.get(\"Age\"))\nprint(\"\\nage[ using get(index-key) ] of df are :\\n\", df.Age.get(1))",
+        "detail": "intro_dataframe",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "series_ka_DF",
+        "description": "series_ka_DF",
+        "peekOfCode": "data = {\n    \"Department\": [\"IT\", \"Finance\", \"IT\"],\n    \"Job Title\": [\"Software Engineer\", \"Senior Software Engineer\", \"Project Manager\"],\n    \"Salary\": pd.Series([50000, 60000]),\n    \"Room No.\": pd.Series([i for i in range(20, 26, 2)]),\n}\ndf = pd.DataFrame(data)\n# print(df)\n\"\"\"index ki value match hona chachie\"\"\"\ndata2 = {",
+        "detail": "series_ka_DF",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "series_ka_DF",
+        "description": "series_ka_DF",
+        "peekOfCode": "df = pd.DataFrame(data)\n# print(df)\n\"\"\"index ki value match hona chachie\"\"\"\ndata2 = {\n    \"Salary\": pd.Series([40000, 50000], index=[\"aa\", \"bb\"]),\n    \"Room No.\": pd.Series([i for i in range(15, 19)], index=[\"aa\", \"bb\", \"cc\", \"dd\"]),\n}\ndf2 = pd.DataFrame(data2, index=[i for i in range(1, 4)])\ndf2 = pd.DataFrame(data2)\ndf2 = pd.DataFrame(data2, index=[\"aa\", \"bb\", \"cc\", \"dd\", \"ee\", \"ff\"])",
+        "detail": "series_ka_DF",
+        "documentation": {}
+    },
+    {
+        "label": "data2",
+        "kind": 5,
+        "importPath": "series_ka_DF",
+        "description": "series_ka_DF",
+        "peekOfCode": "data2 = {\n    \"Salary\": pd.Series([40000, 50000], index=[\"aa\", \"bb\"]),\n    \"Room No.\": pd.Series([i for i in range(15, 19)], index=[\"aa\", \"bb\", \"cc\", \"dd\"]),\n}\ndf2 = pd.DataFrame(data2, index=[i for i in range(1, 4)])\ndf2 = pd.DataFrame(data2)\ndf2 = pd.DataFrame(data2, index=[\"aa\", \"bb\", \"cc\", \"dd\", \"ee\", \"ff\"])\n# print(df2)\ndata3 = [\n    {\"a\": 1, \"b\": 2,\"c\": 3},",
+        "detail": "series_ka_DF",
+        "documentation": {}
+    },
+    {
+        "label": "df2",
+        "kind": 5,
+        "importPath": "series_ka_DF",
+        "description": "series_ka_DF",
+        "peekOfCode": "df2 = pd.DataFrame(data2, index=[i for i in range(1, 4)])\ndf2 = pd.DataFrame(data2)\ndf2 = pd.DataFrame(data2, index=[\"aa\", \"bb\", \"cc\", \"dd\", \"ee\", \"ff\"])\n# print(df2)\ndata3 = [\n    {\"a\": 1, \"b\": 2,\"c\": 3},\n    {\"a\": 10, \"b\": 20, \"c\": 30, \"d\": 40},\n]\ndf3 = pd.DataFrame(data3)\nprint(df3)",
+        "detail": "series_ka_DF",
+        "documentation": {}
+    },
+    {
+        "label": "df2",
+        "kind": 5,
+        "importPath": "series_ka_DF",
+        "description": "series_ka_DF",
+        "peekOfCode": "df2 = pd.DataFrame(data2)\ndf2 = pd.DataFrame(data2, index=[\"aa\", \"bb\", \"cc\", \"dd\", \"ee\", \"ff\"])\n# print(df2)\ndata3 = [\n    {\"a\": 1, \"b\": 2,\"c\": 3},\n    {\"a\": 10, \"b\": 20, \"c\": 30, \"d\": 40},\n]\ndf3 = pd.DataFrame(data3)\nprint(df3)",
+        "detail": "series_ka_DF",
+        "documentation": {}
+    },
+    {
+        "label": "df2",
+        "kind": 5,
+        "importPath": "series_ka_DF",
+        "description": "series_ka_DF",
+        "peekOfCode": "df2 = pd.DataFrame(data2, index=[\"aa\", \"bb\", \"cc\", \"dd\", \"ee\", \"ff\"])\n# print(df2)\ndata3 = [\n    {\"a\": 1, \"b\": 2,\"c\": 3},\n    {\"a\": 10, \"b\": 20, \"c\": 30, \"d\": 40},\n]\ndf3 = pd.DataFrame(data3)\nprint(df3)",
+        "detail": "series_ka_DF",
+        "documentation": {}
+    },
+    {
+        "label": "data3",
+        "kind": 5,
+        "importPath": "series_ka_DF",
+        "description": "series_ka_DF",
+        "peekOfCode": "data3 = [\n    {\"a\": 1, \"b\": 2,\"c\": 3},\n    {\"a\": 10, \"b\": 20, \"c\": 30, \"d\": 40},\n]\ndf3 = pd.DataFrame(data3)\nprint(df3)",
+        "detail": "series_ka_DF",
+        "documentation": {}
+    },
+    {
+        "label": "df3",
+        "kind": 5,
+        "importPath": "series_ka_DF",
+        "description": "series_ka_DF",
+        "peekOfCode": "df3 = pd.DataFrame(data3)\nprint(df3)",
+        "detail": "series_ka_DF",
+        "documentation": {}
+    }
+]
