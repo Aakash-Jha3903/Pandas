@@ -218,6 +218,24 @@
     {
         "label": "data",
         "kind": 5,
+        "importPath": "Missing_Data",
+        "description": "Missing_Data",
+        "peekOfCode": "data = {\n    'name': ['aj', 'shivam', 'mohit', 'mohit'],\n    'age': [28, 24, 35, 32],\n    'roll': [102, 102, 103, 104],\n    'marks':[11, 22, 33, 44],\n    'city':['Madhubani', 'Madhubani', 'Mithila', 'Noida'],\n    'gender':['F', 'M', 'M', 'F']\n}\ndf = pd.DataFrame(data)\n# print(\"Display All Data:\\n\", df)",
+        "detail": "Missing_Data",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Missing_Data",
+        "description": "Missing_Data",
+        "peekOfCode": "df = pd.DataFrame(data)\n# print(\"Display All Data:\\n\", df)\n\"\"\"Boolean Mask where values are nan\"\"\"\n#print(df.isna())\n#print(df.isna().sum())\n\"\"\" Fill some Value in Missing Data \"\"\"\n#print(df.fillna(value=123))\n\"\"\" Drop missing data \"\"\"\n#print(df.dropna())\n\"\"\" Backward Filling \"\"\"",
+        "detail": "Missing_Data",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
         "importPath": "series_ka_DF",
         "description": "series_ka_DF",
         "peekOfCode": "data = {\n    \"Department\": [\"IT\", \"Finance\", \"IT\"],\n    \"Job Title\": [\"Software Engineer\", \"Senior Software Engineer\", \"Project Manager\"],\n    \"Salary\": pd.Series([50000, 60000]),\n    \"Room No.\": pd.Series([i for i in range(20, 26, 2)]),\n}\ndf = pd.DataFrame(data)\n# print(df)\n\"\"\"index ki value match hona chachie\"\"\"\ndata2 = {",
@@ -285,6 +303,132 @@
         "description": "series_ka_DF",
         "peekOfCode": "df3 = pd.DataFrame(data3)\nprint(df3)",
         "detail": "series_ka_DF",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Stats_Pandas",
+        "description": "Stats_Pandas",
+        "peekOfCode": "data = {\n    'name': ['aj', 'shivam', 'mohit', 'mohit'],\n    'age': [28, 24, 35, 32],\n    'roll': [102, 102, 103, 104],\n    'marks':[11, 22, 33, 44],\n    'city':['Madhubani', 'Madhubani', 'Mithila', 'Noida'],\n    'gender':['F', 'M', 'M', 'F']\n}\ndf = pd.DataFrame(data)\n# print(\"Display All Data:\\n\", df)",
+        "detail": "Stats_Pandas",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Stats_Pandas",
+        "description": "Stats_Pandas",
+        "peekOfCode": "df = pd.DataFrame(data)\n# print(\"Display All Data:\\n\", df)\n\"\"\" Calculate the mean of the 'age' column\"\"\"\n#age_mean = df['age'].mean()\n#print(\"\\nMean age:\", age_mean)\n\"\"\" Calculate the mean of the 'age' column including NaN values\"\"\"\n#age_mean_with_nan = df['age'].mean(skipna=False)\n#print(\"\\nMean age including NaN:\", age_mean_with_nan)\n\"\"\" Calculate the mean of 'age' and 'marks' columns\"\"\"\n#selected_means = df[['age', 'marks']].mean()",
+        "detail": "Stats_Pandas",
+        "documentation": {}
+    },
+    {
+        "label": "#age_mean",
+        "kind": 5,
+        "importPath": "Stats_Pandas",
+        "description": "Stats_Pandas",
+        "peekOfCode": "#age_mean = df['age'].mean()\n#print(\"\\nMean age:\", age_mean)\n\"\"\" Calculate the mean of the 'age' column including NaN values\"\"\"\n#age_mean_with_nan = df['age'].mean(skipna=False)\n#print(\"\\nMean age including NaN:\", age_mean_with_nan)\n\"\"\" Calculate the mean of 'age' and 'marks' columns\"\"\"\n#selected_means = df[['age', 'marks']].mean()\n#print(\"\\nAge and Marks Mean:\\n\", selected_means)\n\"\"\" Apply a single aggregation function\"\"\"\n#age_mean = df['age'].agg('mean')",
+        "detail": "Stats_Pandas",
+        "documentation": {}
+    },
+    {
+        "label": "#age_mean_with_nan",
+        "kind": 5,
+        "importPath": "Stats_Pandas",
+        "description": "Stats_Pandas",
+        "peekOfCode": "#age_mean_with_nan = df['age'].mean(skipna=False)\n#print(\"\\nMean age including NaN:\", age_mean_with_nan)\n\"\"\" Calculate the mean of 'age' and 'marks' columns\"\"\"\n#selected_means = df[['age', 'marks']].mean()\n#print(\"\\nAge and Marks Mean:\\n\", selected_means)\n\"\"\" Apply a single aggregation function\"\"\"\n#age_mean = df['age'].agg('mean')\n#print(\"\\nMean age:\", age_mean)\n\"\"\" Apply multiple aggregation functions\"\"\"\n#age_stats = df['age'].agg(['mean', 'min', 'max'])",
+        "detail": "Stats_Pandas",
+        "documentation": {}
+    },
+    {
+        "label": "#selected_means",
+        "kind": 5,
+        "importPath": "Stats_Pandas",
+        "description": "Stats_Pandas",
+        "peekOfCode": "#selected_means = df[['age', 'marks']].mean()\n#print(\"\\nAge and Marks Mean:\\n\", selected_means)\n\"\"\" Apply a single aggregation function\"\"\"\n#age_mean = df['age'].agg('mean')\n#print(\"\\nMean age:\", age_mean)\n\"\"\" Apply multiple aggregation functions\"\"\"\n#age_stats = df['age'].agg(['mean', 'min', 'max'])\n#print(\"\\nAge statistics:\\n\", age_stats)\n\"\"\" Apply different aggregation functions to different columns\"\"\"\ncustom_agg = df.agg({",
+        "detail": "Stats_Pandas",
+        "documentation": {}
+    },
+    {
+        "label": "#age_mean",
+        "kind": 5,
+        "importPath": "Stats_Pandas",
+        "description": "Stats_Pandas",
+        "peekOfCode": "#age_mean = df['age'].agg('mean')\n#print(\"\\nMean age:\", age_mean)\n\"\"\" Apply multiple aggregation functions\"\"\"\n#age_stats = df['age'].agg(['mean', 'min', 'max'])\n#print(\"\\nAge statistics:\\n\", age_stats)\n\"\"\" Apply different aggregation functions to different columns\"\"\"\ncustom_agg = df.agg({\n    'age': ['mean', 'min', 'max'],\n    'marks': 'sum',\n    'roll': 'count'",
+        "detail": "Stats_Pandas",
+        "documentation": {}
+    },
+    {
+        "label": "#age_stats",
+        "kind": 5,
+        "importPath": "Stats_Pandas",
+        "description": "Stats_Pandas",
+        "peekOfCode": "#age_stats = df['age'].agg(['mean', 'min', 'max'])\n#print(\"\\nAge statistics:\\n\", age_stats)\n\"\"\" Apply different aggregation functions to different columns\"\"\"\ncustom_agg = df.agg({\n    'age': ['mean', 'min', 'max'],\n    'marks': 'sum',\n    'roll': 'count'\n})\nprint(\"\\nCustom aggregation:\\n\", custom_agg)",
+        "detail": "Stats_Pandas",
+        "documentation": {}
+    },
+    {
+        "label": "custom_agg",
+        "kind": 5,
+        "importPath": "Stats_Pandas",
+        "description": "Stats_Pandas",
+        "peekOfCode": "custom_agg = df.agg({\n    'age': ['mean', 'min', 'max'],\n    'marks': 'sum',\n    'roll': 'count'\n})\nprint(\"\\nCustom aggregation:\\n\", custom_agg)",
+        "detail": "Stats_Pandas",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Transformation",
+        "description": "Transformation",
+        "peekOfCode": "data = {\n    'name': ['aj', 'shivam', 'mohit', 'mohit'],\n    'age': [28, 24, 35, 32],\n    'roll': [102, 102, 103, 104],\n    'marks':[11, 22, 33, 44],\n    'city':['Madhubani', 'Madhubani', 'Mithila', 'Noida'],\n    'gender':['F', 'M', 'M', 'F']\n}\ndf = pd.DataFrame(data)\n# print(\"Display All Data:\\n\", df)",
+        "detail": "Transformation",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Transformation",
+        "description": "Transformation",
+        "peekOfCode": "df = pd.DataFrame(data)\n# print(\"Display All Data:\\n\", df)\n\"\"\" Apply a single transformation function \"\"\"\n#age_plus_one = df['age'].transform(lambda x: x + 1)\n#print(\"\\nAge plus one:\\n\", age_plus_one)\n\"\"\" Apply a built-in transformation function to a Series \"\"\"\n#age_squared = df['age'].transform(np.sqrt)\n#print(\"\\nAge squared:\\n\", age_squared)\n\"\"\" Apply a single transformation function to multiple columns \"\"\"\n#df_transformed = df[['age', 'marks']].transform(lambda x: x * 2)",
+        "detail": "Transformation",
+        "documentation": {}
+    },
+    {
+        "label": "#age_plus_one",
+        "kind": 5,
+        "importPath": "Transformation",
+        "description": "Transformation",
+        "peekOfCode": "#age_plus_one = df['age'].transform(lambda x: x + 1)\n#print(\"\\nAge plus one:\\n\", age_plus_one)\n\"\"\" Apply a built-in transformation function to a Series \"\"\"\n#age_squared = df['age'].transform(np.sqrt)\n#print(\"\\nAge squared:\\n\", age_squared)\n\"\"\" Apply a single transformation function to multiple columns \"\"\"\n#df_transformed = df[['age', 'marks']].transform(lambda x: x * 2)\n#print(\"\\nDataFrame transformed (age and marks doubled):\\n\", df_transformed)\n\"\"\" Apply different transformation functions to different columns \"\"\"\ndf_transformed_diff = df.transform({",
+        "detail": "Transformation",
+        "documentation": {}
+    },
+    {
+        "label": "#age_squared",
+        "kind": 5,
+        "importPath": "Transformation",
+        "description": "Transformation",
+        "peekOfCode": "#age_squared = df['age'].transform(np.sqrt)\n#print(\"\\nAge squared:\\n\", age_squared)\n\"\"\" Apply a single transformation function to multiple columns \"\"\"\n#df_transformed = df[['age', 'marks']].transform(lambda x: x * 2)\n#print(\"\\nDataFrame transformed (age and marks doubled):\\n\", df_transformed)\n\"\"\" Apply different transformation functions to different columns \"\"\"\ndf_transformed_diff = df.transform({\n    'age': lambda x: x + 10,\n    'marks': lambda x: x - 10\n})",
+        "detail": "Transformation",
+        "documentation": {}
+    },
+    {
+        "label": "#df_transformed",
+        "kind": 5,
+        "importPath": "Transformation",
+        "description": "Transformation",
+        "peekOfCode": "#df_transformed = df[['age', 'marks']].transform(lambda x: x * 2)\n#print(\"\\nDataFrame transformed (age and marks doubled):\\n\", df_transformed)\n\"\"\" Apply different transformation functions to different columns \"\"\"\ndf_transformed_diff = df.transform({\n    'age': lambda x: x + 10,\n    'marks': lambda x: x - 10\n})\nprint(\"\\nDataFrame transformed with different functions:\\n\", df_transformed_diff)",
+        "detail": "Transformation",
+        "documentation": {}
+    },
+    {
+        "label": "df_transformed_diff",
+        "kind": 5,
+        "importPath": "Transformation",
+        "description": "Transformation",
+        "peekOfCode": "df_transformed_diff = df.transform({\n    'age': lambda x: x + 10,\n    'marks': lambda x: x - 10\n})\nprint(\"\\nDataFrame transformed with different functions:\\n\", df_transformed_diff)",
+        "detail": "Transformation",
         "documentation": {}
     }
 ]
