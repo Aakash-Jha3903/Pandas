@@ -382,7 +382,7 @@
         "kind": 5,
         "importPath": "String_Method_Pandas",
         "description": "String_Method_Pandas",
-        "peekOfCode": "data = {\n    'name': ['aj', 'shivam', 'mohit', 'mohit'],\n    'city':['Madhubani', 'Madhubani', 'Mithila', 'Noida'],\n    'gender':['F', 'M', 'M', 'F']\n}\ndf = pd.DataFrame(data)\nprint(\"Display All Data:\\n\", df)\n# Convert to lowercase\n#print(\"\\nLowercase cities:\\n\", df['city'].str.lower())\n# Convert to Uppercase",
+        "peekOfCode": "data = {\n    'name': ['aj', 'shivam', 'mohit', 'mohit'],\n    'city':['Madhubani', 'Madhubani', 'Mithila', 'Noida'],\n    'gender':['F', 'M', 'M', 'F']\n}\ndf = pd.DataFrame(data)\nprint(\"Display All Data:\\n\", df)\n\"\"\"Convert to lowercase\"\"\"\n#print(\"\\nLowercase cities:\\n\", df['city'].str.lower())\n\"\"\"Convert to Uppercase\"\"\"",
         "detail": "String_Method_Pandas",
         "documentation": {}
     },
@@ -391,7 +391,7 @@
         "kind": 5,
         "importPath": "String_Method_Pandas",
         "description": "String_Method_Pandas",
-        "peekOfCode": "df = pd.DataFrame(data)\nprint(\"Display All Data:\\n\", df)\n# Convert to lowercase\n#print(\"\\nLowercase cities:\\n\", df['city'].str.lower())\n# Convert to Uppercase\n#print(\"\\nUppercase cities:\\n\", df['city'].str.upper())\n# Length of String\n#print(\"\\nString Length cities:\\n\", df['city'].str.len())\n# Extract first three characters\n#print(\"\\nCity substrings (first 3 characters):\\n\", df['city'].str[:3])",
+        "peekOfCode": "df = pd.DataFrame(data)\nprint(\"Display All Data:\\n\", df)\n\"\"\"Convert to lowercase\"\"\"\n#print(\"\\nLowercase cities:\\n\", df['city'].str.lower())\n\"\"\"Convert to Uppercase\"\"\"\n#print(\"\\nUppercase cities:\\n\", df['city'].str.upper())\n\"\"\"Length of String\"\"\"\n#print(\"\\nString Length cities:\\n\", df['city'].str.len())\n\"\"\"Extract first three characters\"\"\"\n#print(\"\\nCity substrings (first 3 characters):\\n\", df['city'].str[:3])",
         "detail": "String_Method_Pandas",
         "documentation": {}
     },
@@ -463,7 +463,7 @@
         "kind": 5,
         "importPath": "Value_Counts",
         "description": "Value_Counts",
-        "peekOfCode": "df = pd.DataFrame(data)\nprint(\"Display All Data:\\n\", df)\n# Use value_counts to count unique values in the 'city' column\ncity_counts = df['city'].value_counts()\nprint(\"\\nCity counts:\\n\", city_counts)\n# Use value_counts to count unique values in the 'name' column\nname_counts = df['name'].value_counts()\nprint(\"\\nName counts:\\n\", name_counts)\n# Use value_counts to count unique values in the 'age' column including NaN values\nage_counts = df['age'].value_counts(dropna=False)",
+        "peekOfCode": "df = pd.DataFrame(data)\nprint(\"Display All Data:\\n\", df)\n\"\"\"Use value_counts to count unique values in the 'city' column\"\"\"\ncity_counts = df['city'].value_counts()\nprint(\"\\nCity counts:\\n\", city_counts)\n\"\"\"Use value_counts to count unique values in the 'name' column\"\"\"\nname_counts = df['name'].value_counts()\nprint(\"\\nName counts:\\n\", name_counts)\n\"\"\"Use value_counts to count unique values in the 'age' column including NaN values\"\"\"\nage_counts = df['age'].value_counts(dropna=False)",
         "detail": "Value_Counts",
         "documentation": {}
     },
@@ -472,7 +472,7 @@
         "kind": 5,
         "importPath": "Value_Counts",
         "description": "Value_Counts",
-        "peekOfCode": "city_counts = df['city'].value_counts()\nprint(\"\\nCity counts:\\n\", city_counts)\n# Use value_counts to count unique values in the 'name' column\nname_counts = df['name'].value_counts()\nprint(\"\\nName counts:\\n\", name_counts)\n# Use value_counts to count unique values in the 'age' column including NaN values\nage_counts = df['age'].value_counts(dropna=False)\nprint(\"\\nAge counts including NaN:\\n\", age_counts)\n# Use value_counts with sorting by index\ncity_counts_sorted = df['city'].value_counts().sort_index()",
+        "peekOfCode": "city_counts = df['city'].value_counts()\nprint(\"\\nCity counts:\\n\", city_counts)\n\"\"\"Use value_counts to count unique values in the 'name' column\"\"\"\nname_counts = df['name'].value_counts()\nprint(\"\\nName counts:\\n\", name_counts)\n\"\"\"Use value_counts to count unique values in the 'age' column including NaN values\"\"\"\nage_counts = df['age'].value_counts(dropna=False)\nprint(\"\\nAge counts including NaN:\\n\", age_counts)\n\"\"\"Use value_counts with sorting by index\"\"\"\ncity_counts_sorted = df['city'].value_counts().sort_index()",
         "detail": "Value_Counts",
         "documentation": {}
     },
@@ -481,7 +481,7 @@
         "kind": 5,
         "importPath": "Value_Counts",
         "description": "Value_Counts",
-        "peekOfCode": "name_counts = df['name'].value_counts()\nprint(\"\\nName counts:\\n\", name_counts)\n# Use value_counts to count unique values in the 'age' column including NaN values\nage_counts = df['age'].value_counts(dropna=False)\nprint(\"\\nAge counts including NaN:\\n\", age_counts)\n# Use value_counts with sorting by index\ncity_counts_sorted = df['city'].value_counts().sort_index()\nprint(\"\\nCity counts sorted by index:\\n\", city_counts_sorted)",
+        "peekOfCode": "name_counts = df['name'].value_counts()\nprint(\"\\nName counts:\\n\", name_counts)\n\"\"\"Use value_counts to count unique values in the 'age' column including NaN values\"\"\"\nage_counts = df['age'].value_counts(dropna=False)\nprint(\"\\nAge counts including NaN:\\n\", age_counts)\n\"\"\"Use value_counts with sorting by index\"\"\"\ncity_counts_sorted = df['city'].value_counts().sort_index()\nprint(\"\\nCity counts sorted by index:\\n\", city_counts_sorted)",
         "detail": "Value_Counts",
         "documentation": {}
     },
@@ -490,7 +490,7 @@
         "kind": 5,
         "importPath": "Value_Counts",
         "description": "Value_Counts",
-        "peekOfCode": "age_counts = df['age'].value_counts(dropna=False)\nprint(\"\\nAge counts including NaN:\\n\", age_counts)\n# Use value_counts with sorting by index\ncity_counts_sorted = df['city'].value_counts().sort_index()\nprint(\"\\nCity counts sorted by index:\\n\", city_counts_sorted)",
+        "peekOfCode": "age_counts = df['age'].value_counts(dropna=False)\nprint(\"\\nAge counts including NaN:\\n\", age_counts)\n\"\"\"Use value_counts with sorting by index\"\"\"\ncity_counts_sorted = df['city'].value_counts().sort_index()\nprint(\"\\nCity counts sorted by index:\\n\", city_counts_sorted)",
         "detail": "Value_Counts",
         "documentation": {}
     },
