@@ -18,6 +18,87 @@
         "documentation": {}
     },
     {
+        "label": "df1",
+        "kind": 5,
+        "importPath": ".vscode.Merge",
+        "description": ".vscode.Merge",
+        "peekOfCode": "df1 = pd.DataFrame({\n    'id': [1, 2, 3, 4],\n    'name': ['Sonam', 'Raj', 'Sonal', 'Rajeev']\n})\ndf2 = pd.DataFrame({\n    'id': [3, 4, 5, 6],\n    'score': [90, 80, 70, 60]\n})\n\"\"\" Inner Join\"\"\" \ninner_join = pd.merge(df1, df2, on='id')",
+        "detail": ".vscode.Merge",
+        "documentation": {}
+    },
+    {
+        "label": "df2",
+        "kind": 5,
+        "importPath": ".vscode.Merge",
+        "description": ".vscode.Merge",
+        "peekOfCode": "df2 = pd.DataFrame({\n    'id': [3, 4, 5, 6],\n    'score': [90, 80, 70, 60]\n})\n\"\"\" Inner Join\"\"\" \ninner_join = pd.merge(df1, df2, on='id')\nprint(\"Inner Join:\\n\", inner_join)\n\"\"\" Left Join\"\"\" \nleft_join = pd.merge(df1, df2, on='id', how='left')\nprint(\"\\nLeft Join:\\n\", left_join)",
+        "detail": ".vscode.Merge",
+        "documentation": {}
+    },
+    {
+        "label": "inner_join",
+        "kind": 5,
+        "importPath": ".vscode.Merge",
+        "description": ".vscode.Merge",
+        "peekOfCode": "inner_join = pd.merge(df1, df2, on='id')\nprint(\"Inner Join:\\n\", inner_join)\n\"\"\" Left Join\"\"\" \nleft_join = pd.merge(df1, df2, on='id', how='left')\nprint(\"\\nLeft Join:\\n\", left_join)\n\"\"\" Right Join\"\"\" \nright_join = pd.merge(df1, df2, on='id', how='right')\nprint(\"\\nRight Join:\\n\", right_join)\n\"\"\" Outer Join\"\"\" \nouter_join = pd.merge(df1, df2, on='id', how='outer')",
+        "detail": ".vscode.Merge",
+        "documentation": {}
+    },
+    {
+        "label": "left_join",
+        "kind": 5,
+        "importPath": ".vscode.Merge",
+        "description": ".vscode.Merge",
+        "peekOfCode": "left_join = pd.merge(df1, df2, on='id', how='left')\nprint(\"\\nLeft Join:\\n\", left_join)\n\"\"\" Right Join\"\"\" \nright_join = pd.merge(df1, df2, on='id', how='right')\nprint(\"\\nRight Join:\\n\", right_join)\n\"\"\" Outer Join\"\"\" \nouter_join = pd.merge(df1, df2, on='id', how='outer')\nprint(\"\\nOuter Join:\\n\", outer_join)\ndf3 = pd.DataFrame({\n    'id': [1, 2, 3, 4],",
+        "detail": ".vscode.Merge",
+        "documentation": {}
+    },
+    {
+        "label": "right_join",
+        "kind": 5,
+        "importPath": ".vscode.Merge",
+        "description": ".vscode.Merge",
+        "peekOfCode": "right_join = pd.merge(df1, df2, on='id', how='right')\nprint(\"\\nRight Join:\\n\", right_join)\n\"\"\" Outer Join\"\"\" \nouter_join = pd.merge(df1, df2, on='id', how='outer')\nprint(\"\\nOuter Join:\\n\", outer_join)\ndf3 = pd.DataFrame({\n    'id': [1, 2, 3, 4],\n    'name': ['Sonam', 'Raj', 'Sonal', 'Rajeev']\n})\ndf4 = pd.DataFrame({",
+        "detail": ".vscode.Merge",
+        "documentation": {}
+    },
+    {
+        "label": "outer_join",
+        "kind": 5,
+        "importPath": ".vscode.Merge",
+        "description": ".vscode.Merge",
+        "peekOfCode": "outer_join = pd.merge(df1, df2, on='id', how='outer')\nprint(\"\\nOuter Join:\\n\", outer_join)\ndf3 = pd.DataFrame({\n    'id': [1, 2, 3, 4],\n    'name': ['Sonam', 'Raj', 'Sonal', 'Rajeev']\n})\ndf4 = pd.DataFrame({\n    'stu_id': [3, 4, 5, 6],\n    'score': [90, 80, 70, 60]\n})",
+        "detail": ".vscode.Merge",
+        "documentation": {}
+    },
+    {
+        "label": "df3",
+        "kind": 5,
+        "importPath": ".vscode.Merge",
+        "description": ".vscode.Merge",
+        "peekOfCode": "df3 = pd.DataFrame({\n    'id': [1, 2, 3, 4],\n    'name': ['Sonam', 'Raj', 'Sonal', 'Rajeev']\n})\ndf4 = pd.DataFrame({\n    'stu_id': [3, 4, 5, 6],\n    'score': [90, 80, 70, 60]\n})\n\"\"\" Inner Join\"\"\" \ninner_join = pd.merge(df3, df4, left_on='id', right_on='stu_id')",
+        "detail": ".vscode.Merge",
+        "documentation": {}
+    },
+    {
+        "label": "df4",
+        "kind": 5,
+        "importPath": ".vscode.Merge",
+        "description": ".vscode.Merge",
+        "peekOfCode": "df4 = pd.DataFrame({\n    'stu_id': [3, 4, 5, 6],\n    'score': [90, 80, 70, 60]\n})\n\"\"\" Inner Join\"\"\" \ninner_join = pd.merge(df3, df4, left_on='id', right_on='stu_id')\nprint(\"Inner Join:\\n\", inner_join)",
+        "detail": ".vscode.Merge",
+        "documentation": {}
+    },
+    {
+        "label": "inner_join",
+        "kind": 5,
+        "importPath": ".vscode.Merge",
+        "description": ".vscode.Merge",
+        "peekOfCode": "inner_join = pd.merge(df3, df4, left_on='id', right_on='stu_id')\nprint(\"Inner Join:\\n\", inner_join)",
+        "detail": ".vscode.Merge",
+        "documentation": {}
+    },
+    {
         "label": "data",
         "kind": 5,
         "importPath": "Column_Deletion",
