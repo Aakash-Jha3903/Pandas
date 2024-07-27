@@ -180,6 +180,60 @@
         "documentation": {}
     },
     {
+        "label": "df1",
+        "kind": 5,
+        "importPath": "Concat",
+        "description": "Concat",
+        "peekOfCode": "df1 = pd.DataFrame({\n    'A': ['A0', 'A1', 'A2', 'A3'],\n    'B': ['B0', 'B1', 'B2', 'B3']\n})\ndf2 = pd.DataFrame({\n    'A': ['A4', 'A5', 'A6', 'A7'],\n    'B': ['B4', 'B5', 'B6', 'B7']\n})\ndf3 = pd.DataFrame({\n    'C': ['C0', 'C1', 'C2', 'C3'],",
+        "detail": "Concat",
+        "documentation": {}
+    },
+    {
+        "label": "df2",
+        "kind": 5,
+        "importPath": "Concat",
+        "description": "Concat",
+        "peekOfCode": "df2 = pd.DataFrame({\n    'A': ['A4', 'A5', 'A6', 'A7'],\n    'B': ['B4', 'B5', 'B6', 'B7']\n})\ndf3 = pd.DataFrame({\n    'C': ['C0', 'C1', 'C2', 'C3'],\n    'D': ['D0', 'D1', 'D2', 'D3']\n})\n\"\"\"Vertical Concatenation\"\"\"\nvertical_concat = pd.concat([df1, df2])",
+        "detail": "Concat",
+        "documentation": {}
+    },
+    {
+        "label": "df3",
+        "kind": 5,
+        "importPath": "Concat",
+        "description": "Concat",
+        "peekOfCode": "df3 = pd.DataFrame({\n    'C': ['C0', 'C1', 'C2', 'C3'],\n    'D': ['D0', 'D1', 'D2', 'D3']\n})\n\"\"\"Vertical Concatenation\"\"\"\nvertical_concat = pd.concat([df1, df2])\nprint(\"Vertical Concatenation:\\n\", vertical_concat)\n\"\"\"Horizontal Concatenation\"\"\"\nhorizontal_concat = pd.concat([df1, df2], axis=1)\nprint(\"\\nHorizontal Concatenation:\\n\", horizontal_concat)",
+        "detail": "Concat",
+        "documentation": {}
+    },
+    {
+        "label": "vertical_concat",
+        "kind": 5,
+        "importPath": "Concat",
+        "description": "Concat",
+        "peekOfCode": "vertical_concat = pd.concat([df1, df2])\nprint(\"Vertical Concatenation:\\n\", vertical_concat)\n\"\"\"Horizontal Concatenation\"\"\"\nhorizontal_concat = pd.concat([df1, df2], axis=1)\nprint(\"\\nHorizontal Concatenation:\\n\", horizontal_concat)\n\"\"\"Concatenation with Different Columns\"\"\"\ndifferent_columns_concat = pd.concat([df1, df3], axis=1)\nprint(\"\\nConcatenation with Different Columns:\\n\", different_columns_concat)",
+        "detail": "Concat",
+        "documentation": {}
+    },
+    {
+        "label": "horizontal_concat",
+        "kind": 5,
+        "importPath": "Concat",
+        "description": "Concat",
+        "peekOfCode": "horizontal_concat = pd.concat([df1, df2], axis=1)\nprint(\"\\nHorizontal Concatenation:\\n\", horizontal_concat)\n\"\"\"Concatenation with Different Columns\"\"\"\ndifferent_columns_concat = pd.concat([df1, df3], axis=1)\nprint(\"\\nConcatenation with Different Columns:\\n\", different_columns_concat)",
+        "detail": "Concat",
+        "documentation": {}
+    },
+    {
+        "label": "different_columns_concat",
+        "kind": 5,
+        "importPath": "Concat",
+        "description": "Concat",
+        "peekOfCode": "different_columns_concat = pd.concat([df1, df3], axis=1)\nprint(\"\\nConcatenation with Different Columns:\\n\", different_columns_concat)",
+        "detail": "Concat",
+        "documentation": {}
+    },
+    {
         "label": "data",
         "kind": 5,
         "importPath": "Data_Inspection",
@@ -231,6 +285,60 @@
         "description": "Filter",
         "peekOfCode": "dt2 = df[df['age'].isin([28, 32])]\nprint(dt2)",
         "detail": "Filter",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Grouping",
+        "description": "Grouping",
+        "peekOfCode": "data = {\n    'team': ['A', 'A', 'B', 'B', 'C', 'C'],\n    'player': ['X', 'Y', 'X', 'Y', 'X', 'Y'],\n    'points': [10, 15, 10, 20, 10, 25]\n}\ndf = pd.DataFrame(data)\n\"\"\" Display the DataFrame\"\"\"\nprint(\"Original DataFrame:\\n\", df)\n\"\"\" Group by 'team' and calculate the sum of 'points'\"\"\"\ngrouped_sum = df.groupby('team').sum()",
+        "detail": "Grouping",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Grouping",
+        "description": "Grouping",
+        "peekOfCode": "df = pd.DataFrame(data)\n\"\"\" Display the DataFrame\"\"\"\nprint(\"Original DataFrame:\\n\", df)\n\"\"\" Group by 'team' and calculate the sum of 'points'\"\"\"\ngrouped_sum = df.groupby('team').sum()\nprint(\"\\nGrouped by Team and summed:\\n\", grouped_sum)\n\"\"\" Group by 'Team' and 'Player' and calculate the sum of 'Points'\"\"\"\ngrouped_multi = df.groupby(['team', 'player']).sum()\nprint(\"\\nGrouped by Team and Player and summed:\\n\", grouped_multi)\n\"\"\" Group by 'Team' and calculate various aggregations\"\"\"",
+        "detail": "Grouping",
+        "documentation": {}
+    },
+    {
+        "label": "grouped_sum",
+        "kind": 5,
+        "importPath": "Grouping",
+        "description": "Grouping",
+        "peekOfCode": "grouped_sum = df.groupby('team').sum()\nprint(\"\\nGrouped by Team and summed:\\n\", grouped_sum)\n\"\"\" Group by 'Team' and 'Player' and calculate the sum of 'Points'\"\"\"\ngrouped_multi = df.groupby(['team', 'player']).sum()\nprint(\"\\nGrouped by Team and Player and summed:\\n\", grouped_multi)\n\"\"\" Group by 'Team' and calculate various aggregations\"\"\"\ngrouped_agg = df.groupby('team').agg({\n    'points': ['sum', 'mean', 'max']\n})\nprint(\"\\nGrouped by Team with multiple aggregations:\\n\", grouped_agg)",
+        "detail": "Grouping",
+        "documentation": {}
+    },
+    {
+        "label": "grouped_multi",
+        "kind": 5,
+        "importPath": "Grouping",
+        "description": "Grouping",
+        "peekOfCode": "grouped_multi = df.groupby(['team', 'player']).sum()\nprint(\"\\nGrouped by Team and Player and summed:\\n\", grouped_multi)\n\"\"\" Group by 'Team' and calculate various aggregations\"\"\"\ngrouped_agg = df.groupby('team').agg({\n    'points': ['sum', 'mean', 'max']\n})\nprint(\"\\nGrouped by Team with multiple aggregations:\\n\", grouped_agg)\n\"\"\" Calculate the mean Points by Team and assign it to each row \"\"\"\ndf['meanpoints'] = df.groupby('team')['points'].transform('mean')\nprint(\"\\nMean Points by Team assigned to each row:\\n\", df)",
+        "detail": "Grouping",
+        "documentation": {}
+    },
+    {
+        "label": "grouped_agg",
+        "kind": 5,
+        "importPath": "Grouping",
+        "description": "Grouping",
+        "peekOfCode": "grouped_agg = df.groupby('team').agg({\n    'points': ['sum', 'mean', 'max']\n})\nprint(\"\\nGrouped by Team with multiple aggregations:\\n\", grouped_agg)\n\"\"\" Calculate the mean Points by Team and assign it to each row \"\"\"\ndf['meanpoints'] = df.groupby('team')['points'].transform('mean')\nprint(\"\\nMean Points by Team assigned to each row:\\n\", df)\n\"\"\" Iterate over groups \"\"\"\nfor name, group in df.groupby('team'):\n    print(f\"\\nGroup: {name}\")",
+        "detail": "Grouping",
+        "documentation": {}
+    },
+    {
+        "label": "df['meanpoints']",
+        "kind": 5,
+        "importPath": "Grouping",
+        "description": "Grouping",
+        "peekOfCode": "df['meanpoints'] = df.groupby('team')['points'].transform('mean')\nprint(\"\\nMean Points by Team assigned to each row:\\n\", df)\n\"\"\" Iterate over groups \"\"\"\nfor name, group in df.groupby('team'):\n    print(f\"\\nGroup: {name}\")\n    print(group)",
+        "detail": "Grouping",
         "documentation": {}
     },
     {
