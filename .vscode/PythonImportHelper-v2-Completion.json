@@ -425,6 +425,60 @@
     {
         "label": "data",
         "kind": 5,
+        "importPath": "Pivot_Table",
+        "description": "Pivot_Table",
+        "peekOfCode": "data = {\n    'Date': ['2024-01-01', '2024-01-01', '2024-01-02', '2024-01-02'],\n    'City': ['Bokaro', 'Ranchi', 'Dhanbad', 'Dumka'],\n    'Sales': [200, 150, 300, 200],\n    'Expenses': [50, 60, 70, 80]\n}\ndf = pd.DataFrame(data)\nprint(\"Original DataFrame:\\n\", df)\n# Basic Pivot Table\npivot = pd.pivot_table(df, values='Sales', index='Date',",
+        "detail": "Pivot_Table",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Pivot_Table",
+        "description": "Pivot_Table",
+        "peekOfCode": "df = pd.DataFrame(data)\nprint(\"Original DataFrame:\\n\", df)\n# Basic Pivot Table\npivot = pd.pivot_table(df, values='Sales', index='Date',\n                       columns='City', aggfunc='sum')\nprint(\"\\nPivot Table:\\n\", pivot)\n# Multiple Aggregation Functions\npivot_multi = pd.pivot_table(df, values=['Sales', 'Expenses'], index='Date', columns='City',\n                             aggfunc={'Sales': 'sum', 'Expenses': 'mean'})\nprint(\"\\nPivot Table with Multiple Aggregations:\\n\", pivot_multi)",
+        "detail": "Pivot_Table",
+        "documentation": {}
+    },
+    {
+        "label": "pivot",
+        "kind": 5,
+        "importPath": "Pivot_Table",
+        "description": "Pivot_Table",
+        "peekOfCode": "pivot = pd.pivot_table(df, values='Sales', index='Date',\n                       columns='City', aggfunc='sum')\nprint(\"\\nPivot Table:\\n\", pivot)\n# Multiple Aggregation Functions\npivot_multi = pd.pivot_table(df, values=['Sales', 'Expenses'], index='Date', columns='City',\n                             aggfunc={'Sales': 'sum', 'Expenses': 'mean'})\nprint(\"\\nPivot Table with Multiple Aggregations:\\n\", pivot_multi)\n# Adding Margins (Subtotals)\npivot_margins = pd.pivot_table(df, values='Sales', index='Date', columns='City',\n                               aggfunc='sum', margins=True)",
+        "detail": "Pivot_Table",
+        "documentation": {}
+    },
+    {
+        "label": "pivot_multi",
+        "kind": 5,
+        "importPath": "Pivot_Table",
+        "description": "Pivot_Table",
+        "peekOfCode": "pivot_multi = pd.pivot_table(df, values=['Sales', 'Expenses'], index='Date', columns='City',\n                             aggfunc={'Sales': 'sum', 'Expenses': 'mean'})\nprint(\"\\nPivot Table with Multiple Aggregations:\\n\", pivot_multi)\n# Adding Margins (Subtotals)\npivot_margins = pd.pivot_table(df, values='Sales', index='Date', columns='City',\n                               aggfunc='sum', margins=True)\nprint(\"\\nPivot Table with Margins:\\n\", pivot_margins)\n# Filling Missing Values\npivot_fill = pd.pivot_table(df, values='Sales', index='Date', columns='City',\n                            aggfunc='sum', fill_value=0)",
+        "detail": "Pivot_Table",
+        "documentation": {}
+    },
+    {
+        "label": "pivot_margins",
+        "kind": 5,
+        "importPath": "Pivot_Table",
+        "description": "Pivot_Table",
+        "peekOfCode": "pivot_margins = pd.pivot_table(df, values='Sales', index='Date', columns='City',\n                               aggfunc='sum', margins=True)\nprint(\"\\nPivot Table with Margins:\\n\", pivot_margins)\n# Filling Missing Values\npivot_fill = pd.pivot_table(df, values='Sales', index='Date', columns='City',\n                            aggfunc='sum', fill_value=0)\nprint(\"\\nPivot Table with Fill Value:\\n\", pivot_fill)",
+        "detail": "Pivot_Table",
+        "documentation": {}
+    },
+    {
+        "label": "pivot_fill",
+        "kind": 5,
+        "importPath": "Pivot_Table",
+        "description": "Pivot_Table",
+        "peekOfCode": "pivot_fill = pd.pivot_table(df, values='Sales', index='Date', columns='City',\n                            aggfunc='sum', fill_value=0)\nprint(\"\\nPivot Table with Fill Value:\\n\", pivot_fill)",
+        "detail": "Pivot_Table",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
         "importPath": "series_ka_DF",
         "description": "series_ka_DF",
         "peekOfCode": "data = {\n    \"Department\": [\"IT\", \"Finance\", \"IT\"],\n    \"Job Title\": [\"Software Engineer\", \"Senior Software Engineer\", \"Project Manager\"],\n    \"Salary\": pd.Series([50000, 60000]),\n    \"Room No.\": pd.Series([i for i in range(20, 26, 2)]),\n}\ndf = pd.DataFrame(data)\n# print(df)\n\"\"\"index ki value match hona chachie\"\"\"\ndata2 = {",
