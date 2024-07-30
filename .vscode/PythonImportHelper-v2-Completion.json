@@ -103,7 +103,7 @@
         "kind": 5,
         "importPath": "Import_and_Export_File.Import_Export_CSV_File",
         "description": "Import_and_Export_File.Import_Export_CSV_File",
-        "peekOfCode": "data = {\n    'name': ['aj', 'shivam', 'mohit', 'mohit'],\n    'city': ['Madhubani', 'Madhubani', 'Mithila', 'Noida'],\n    'age': [28, 24, 24, np.nan],\n}\ndf = pd.DataFrame(data)\n# Writing DataFrame to CSV file\ndf.to_csv('Import_and_Export_File\\sample.csv', index=False)  # Without index\n# Reading the CSV file back into a DataFrame\ndf_read = pd.read_csv('sample.csv')",
+        "peekOfCode": "data = {\n    'name': ['aj', 'shivam', 'mohit', 'mohit'],\n    'city': ['Madhubani', 'Madhubani', 'Mithila', 'Noida'],\n    'age': [28, 24, 24, np.nan],\n}\ndf = pd.DataFrame(data)\n# Writing DataFrame to CSV file\ndf.to_csv('Import_and_Export_File/sample.csv', index=False)  # Without index\n# Reading the CSV file back into a DataFrame\ndf_read = pd.read_csv('Import_and_Export_File/sample.csv')",
         "detail": "Import_and_Export_File.Import_Export_CSV_File",
         "documentation": {}
     },
@@ -112,7 +112,7 @@
         "kind": 5,
         "importPath": "Import_and_Export_File.Import_Export_CSV_File",
         "description": "Import_and_Export_File.Import_Export_CSV_File",
-        "peekOfCode": "df = pd.DataFrame(data)\n# Writing DataFrame to CSV file\ndf.to_csv('Import_and_Export_File\\sample.csv', index=False)  # Without index\n# Reading the CSV file back into a DataFrame\ndf_read = pd.read_csv('sample.csv')\nprint(df_read)",
+        "peekOfCode": "df = pd.DataFrame(data)\n# Writing DataFrame to CSV file\ndf.to_csv('Import_and_Export_File/sample.csv', index=False)  # Without index\n# Reading the CSV file back into a DataFrame\ndf_read = pd.read_csv('Import_and_Export_File/sample.csv')\nprint(df_read)",
         "detail": "Import_and_Export_File.Import_Export_CSV_File",
         "documentation": {}
     },
@@ -121,7 +121,7 @@
         "kind": 5,
         "importPath": "Import_and_Export_File.Import_Export_CSV_File",
         "description": "Import_and_Export_File.Import_Export_CSV_File",
-        "peekOfCode": "df_read = pd.read_csv('sample.csv')\nprint(df_read)",
+        "peekOfCode": "df_read = pd.read_csv('Import_and_Export_File/sample.csv')\nprint(df_read)",
         "detail": "Import_and_Export_File.Import_Export_CSV_File",
         "documentation": {}
     },

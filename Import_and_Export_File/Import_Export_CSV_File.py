@@ -9,8 +9,8 @@ data = {
 }
 df = pd.DataFrame(data)
 # Writing DataFrame to CSV file
-df.to_csv('Import_and_Export_File\sample.csv', index=False)  # Without index
+df.to_csv('Import_and_Export_File/sample.csv', index=False)  # Without index
 
 # Reading the CSV file back into a DataFrame
-df_read = pd.read_csv('sample.csv')
+df_read = pd.read_csv('Import_and_Export_File/sample.csv')
 print(df_read)
