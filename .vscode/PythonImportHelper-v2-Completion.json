@@ -101,6 +101,33 @@
     {
         "label": "data",
         "kind": 5,
+        "importPath": "Import_and_Export_File.Import_Export_CSV_File",
+        "description": "Import_and_Export_File.Import_Export_CSV_File",
+        "peekOfCode": "data = {\n    'name': ['aj', 'shivam', 'mohit', 'mohit'],\n    'city': ['Madhubani', 'Madhubani', 'Mithila', 'Noida'],\n    'age': [28, 24, 24, np.nan],\n}\ndf = pd.DataFrame(data)\n# Writing DataFrame to CSV file\ndf.to_csv('Import_and_Export_File\\sample.csv', index=False)  # Without index\n# Reading the CSV file back into a DataFrame\ndf_read = pd.read_csv('sample.csv')",
+        "detail": "Import_and_Export_File.Import_Export_CSV_File",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Import_and_Export_File.Import_Export_CSV_File",
+        "description": "Import_and_Export_File.Import_Export_CSV_File",
+        "peekOfCode": "df = pd.DataFrame(data)\n# Writing DataFrame to CSV file\ndf.to_csv('Import_and_Export_File\\sample.csv', index=False)  # Without index\n# Reading the CSV file back into a DataFrame\ndf_read = pd.read_csv('sample.csv')\nprint(df_read)",
+        "detail": "Import_and_Export_File.Import_Export_CSV_File",
+        "documentation": {}
+    },
+    {
+        "label": "df_read",
+        "kind": 5,
+        "importPath": "Import_and_Export_File.Import_Export_CSV_File",
+        "description": "Import_and_Export_File.Import_Export_CSV_File",
+        "peekOfCode": "df_read = pd.read_csv('sample.csv')\nprint(df_read)",
+        "detail": "Import_and_Export_File.Import_Export_CSV_File",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
         "importPath": "Column_Deletion",
         "description": "Column_Deletion",
         "peekOfCode": "data = {\n    'name': ['aj', 'shivam', 'mohit', 'mohit'],\n    'age': [28, 24, 35, 32],\n    'roll': [102, 102, 103, 104],\n    'marks':[11, 22, 33, 44],\n    'city':['Madhubani', 'Madhubani', 'Mithila', 'Noida'],\n    'gender':['F', 'M', 'M', 'F']\n}\ndf = pd.DataFrame(data)\n# print(\"Display All Data:\\n\", df)",
@@ -402,6 +429,42 @@
         "description": "intro_dataframe",
         "peekOfCode": "df = pd.DataFrame(data, index=[i for i in range(1, 5)])\n# print(df)\n# print(\"Index of df are :\\n\",df.index)\n# print(\"names of df are :\\n\",df.Name)\n# print(\"city of df are :\\n\",df.City.get(1))  \"\"\"get() take the index value \"\"\"\nprint(\"\\nage of df are :\\n\", df.Age)\nprint(\"\\nage[ using get('Age') ] of df are :\\n\", df.get(\"Age\"))\nprint(\"\\nage[ using get(index-key) ] of df are :\\n\", df.Age.get(1))",
         "detail": "intro_dataframe",
+        "documentation": {}
+    },
+    {
+        "label": "to_uppercase",
+        "kind": 2,
+        "importPath": "Map",
+        "description": "Map",
+        "peekOfCode": "def to_uppercase(name):\n    return name.upper()\n# Apply the to_uppercase function to the 'name' column using map()\ndf['name'] = df['name'].map(to_uppercase)\n# Display the modified DataFrame\nprint(\"\\nDataFrame after applying map() to 'name' column:\")\nprint(df)",
+        "detail": "Map",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Map",
+        "description": "Map",
+        "peekOfCode": "data = {\n    'name': ['aj', 'shivam', 'mohit', 'mohit'],\n    'city':['Madhubani', 'Madhubani', 'Mithila', 'Noida'],\n    'age': [28, 24, 35, 32, 28, 24, np.nan, 32, 28, 24],\n}\ndf = pd.DataFrame(data)\nprint(\"Display All Data:\\n\", df)\n# Function to convert names to uppercase\ndef to_uppercase(name):\n    return name.upper()",
+        "detail": "Map",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Map",
+        "description": "Map",
+        "peekOfCode": "df = pd.DataFrame(data)\nprint(\"Display All Data:\\n\", df)\n# Function to convert names to uppercase\ndef to_uppercase(name):\n    return name.upper()\n# Apply the to_uppercase function to the 'name' column using map()\ndf['name'] = df['name'].map(to_uppercase)\n# Display the modified DataFrame\nprint(\"\\nDataFrame after applying map() to 'name' column:\")\nprint(df)",
+        "detail": "Map",
+        "documentation": {}
+    },
+    {
+        "label": "df['name']",
+        "kind": 5,
+        "importPath": "Map",
+        "description": "Map",
+        "peekOfCode": "df['name'] = df['name'].map(to_uppercase)\n# Display the modified DataFrame\nprint(\"\\nDataFrame after applying map() to 'name' column:\")\nprint(df)",
+        "detail": "Map",
         "documentation": {}
     },
     {
